@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 6px;
+    overflow: hidden;
+}
+
+.movie-poster {
+    margin: 8px 0;
+    cursor: pointer;
+    transition: all 0.4s linear;
+    border-radius: 6px;
+}
+
+.mist {
+    opacity: 0.3;
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+img {
+    border-radius: 6px;
+}
+
+.view {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    transition: all 0.4s linear;
+}
+
+.red {
+    color: #C41C18;
+    font-size: 1.1rem;
+}
+
+.off {
+    display: none;
+    transition: all 0.4s linear;
+}
+
+.movie-info {
+    margin: 6px 4px;
+}
+
+.info-hover {
+    padding: 0.3rem;
+}
+
+.movie-info .title {
+    font-size: 1.4rem;
+}
+
+.movie-info .vote , .day , .overview {
+    font-size: 0.9rem;
+}
