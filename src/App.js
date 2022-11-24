@@ -5,14 +5,14 @@ import { Notice } from "./pages/Notice";
 
 function App() {
   return (
-    <div className="App">
-      <Router basename={process.env.PUBLIC_URL}>
+    <Router basename={process.env.PUBLIC_URL}>
+      <div className="App">
         <Routes>
           <Route path="/" element={<Navbar />} />
           <Route path="/notice" element={<Notice />} />
         </Routes>
-      </Router>
-    </div>
+      </div>
+    </Router>
   );
 }
 
