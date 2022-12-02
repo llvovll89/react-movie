@@ -1,0 +1,29 @@
+.tv-container {
+    display: flex;
+    overflow-x: scroll;
+    width: 90vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.tv-card {
+    margin: 0 0.3rem;
+    width: 150px;
+}
+
+.tv-card img {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    height: 8px;
+    width: 1px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(219, 219, 219);
+}

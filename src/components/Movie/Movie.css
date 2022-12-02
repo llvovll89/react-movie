@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     color: #fff;
-    margin: 0 6px;
+    margin: 4px 7px;
     overflow: hidden;
 }
 
@@ -57,4 +57,10 @@ img {
 
 .movie-info .vote , .day , .overview {
     font-size: 0.9rem;
+}
+
+@media (max-width:564px) {
+    .container {
+        margin: 4px auto;
+    }
 }

@@ -1,4 +1,4 @@
-.navbar {
+.home {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -7,7 +7,6 @@
 
 .content {
     width: 100%;
-    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,13 +22,10 @@
 }
 
 .inner a{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #141414;
     font-size: 0.9rem;
-}
-
-.inner .click {
-    color: #141414;
-    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 input , button {
@@ -40,23 +36,24 @@ input , button {
     border-radius: 3px;
 }
 
-.navbar .title {
+.home .nav-title {
     position: relative;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
-.navbar .title h1, span {
+.home .nav-title h1, span {
     color: #fff;
     margin: 0 0.3rem;
 }
 
-.navbar .title h1 {
+.home .nav-title h1 {
     position: relative;
     font-size: 3.5rem;
 }
 
-.navbar .title h1::before {
+.home .nav-title h1::before {
     position: absolute;
     content: "";
     width: 100%;
@@ -66,7 +63,7 @@ input , button {
     background: #fff;
 }
 
-.navbar .title span {
+.home .nav-title span {
     position: absolute;
     right: -30%;
     bottom: 20%;
@@ -75,7 +72,6 @@ input , button {
 }
 
 #search-form {
-    margin: 1rem;
     border: 3px solid #212121;
     width: 100%;
     max-width: 450px;
@@ -94,6 +90,7 @@ input , button {
     font-size: 1rem;
     line-height: 16px;
     cursor: pointer;
+    padding: 9px 12px;
 }
 
 .movie-container {
@@ -104,6 +101,9 @@ input , button {
 @media (min-width: 1240px) {
     .movie-container {
         grid-template-columns: repeat(6 , 1fr);
+    }
+    .content {
+        padding: 0.25rem;
     }
 }
 
@@ -117,25 +117,29 @@ input , button {
     .movie-container {
         grid-template-columns: repeat(2 ,1fr);
     }
+    /* .content */
 }
 
 @media (max-width: 524px) {
     .content {
-        padding: 0;
+        padding: 0 0.5rem;
+        margin: 0.5rem auto;
         gap: 0.5rem;
     }
-    .content .title h1 {
+    .content .nav-title h1 {
         margin: 0;
         font-size: 2.2rem;
     }
     #search-form {
         display: grid;
+        width: auto;
         grid-template-columns: 80% 20%;
         margin: 1rem 0;
         border: 2px solid #212121;
     }
     .movie-container {
-        padding: 1rem 0;
+        max-width: 99vw;
+        padding: 0.25rem;
         grid-template-columns: repeat(1, 1fr);
     }
 }

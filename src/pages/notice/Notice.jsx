@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
-import '../css/Notice.css';
+import './Notice.css';
 
 export const Notice = () => {
     const githubIo = "https://github.com/llvovll89?tab=repositories";

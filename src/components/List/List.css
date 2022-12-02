@@ -1,0 +1,27 @@
+.list-container {
+    margin: 0.3rem 0;
+    width: 100%;
+    padding: 1rem;
+    background: #181818;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.listbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.listbar .listbar-item {
+    margin: 0 1.5rem;
+}
+
+.listbar .listbar-item a {
+    letter-spacing: 0.5px;
+}
+
+.listbar-item:hover {
+    border-bottom: 1px solid #ccc;
+    opacity: 0.8;
+}

@@ -24,6 +24,12 @@ img {
 body {
   padding: 1rem;
   font-family: 'Rajdhani', sans-serif;
-  background: #181818;
+  background: #000000;
   min-height: 100vh;
+}
+
+@media (max-width: 564px) {
+  body {
+    padding: 0 0.35rem;
+  }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../css/Movie.css'
+import './Movie.css'
 
 export const Movie = (props) => {
     const API_IMG = "https://image.tmdb.org/t/p/w500"
