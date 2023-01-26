@@ -6,11 +6,12 @@ import { v4 as uuid } from 'uuid';
 
 function Tvtop() {
   const [tvMovie, setTvMovie] = useState([]);
+  const API_KEY = process.env.REACT_APP_API_KEY;
 
   useEffect(() => {
     axios
       .get(
-        'https://api.themoviedb.org/3/tv/popular?api_key=81dcb16b2b29c9eea6cdc5e7b5a42358&language=kor&page=1'
+        `https://api.themoviedb.org/3/tv/popular?api_key=${API_KEY}&language=kor&page=1`
       )
       .then((res) => {
         setTvMovie(res.data.results);

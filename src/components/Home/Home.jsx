@@ -8,10 +8,11 @@ import List from '../List/List';
 import { motion } from 'framer-motion';
 
 export const Home = () => {
-  const API_URL =
-    'https://api.themoviedb.org/3/movie/popular?api_key=81dcb16b2b29c9eea6cdc5e7b5a42358&language=ko';
-  const API_SEARCH =
-    'http://api.themoviedb.org/3/search/movie?api_key=81dcb16b2b29c9eea6cdc5e7b5a42358&query=';
+  const API_KEY = process.env.REACT_APP_API_KEY;
+  const TV_SHOW = `https://api.themoviedb.org/3/tv/{tv_id}/images?api_key=${API_KEY}&language=en-US`
+  console.log(TV_SHOW);
+  const API_URL = `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=ko`;
+  const API_SEARCH = `http://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&query=`;
 
   const [movies, setMovies] = useState([]);
   const [inputVal, setInputVal] = useState('');
